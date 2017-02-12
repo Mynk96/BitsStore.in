@@ -1,0 +1,255 @@
+/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+        html {
+                position: relative;
+                min-height: 100%;
+        }
+        body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+        }
+        .navigation{
+            margin-top:-3%;
+        }
+	
+        #forgot{
+            margin-top:-2%;
+    
+            font-size: 10px;
+        }
+        .search_box{
+            margin-top:0.5%;
+            position:absolute;
+        }
+        #toSearch{
+            width:160%;
+        }
+        #edit_profile{
+            position: relative;
+            margin-left:43.5%;
+        }
+}
+
+/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+        html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+        .navigation{
+            margin-top:-4.5%;
+            margin-left:42%;
+        }
+	
+        #forgot{
+            margin-top:-1%;
+            margin-left:30%;
+            font-size: 10px;
+        }
+        .search_box{
+            margin-top:0.5%;
+            position:absolute;
+            margin-left:15%;
+        }
+        #toSearch{
+            width:160%;
+        }
+        #edit_profile{
+            position: relative;
+            margin-left:43.5%;
+        }    
+        
+}
+
+/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+        
+            .navigation{
+            margin-top:-4.5%;
+            
+        }
+	
+        #forgot{
+            margin-top:-1%;
+            margin-left:30%;
+            font-size: 10px;
+        }
+        .search_box{
+            margin-top:0.5%;
+            margin-left:12%;
+            position:absolute;
+        }
+        #toSearch{
+            width:160%;
+        }
+        #edit_profile{
+            position: relative;
+            margin-left:43.5%;
+        }
+            
+	}
+/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .navigation{
+            margin-top:10%;
+        }
+	
+        #forgot{
+            margin-top:-2%;
+    
+            font-size: 10px;
+        }
+        .search_box{
+            margin-top:0.5%;
+            position:absolute;
+        }
+        #toSearch{
+            width:160%;
+        }
+        #edit_profile{
+            position: relative;
+            margin-left:43.5%;
+        }
+            
+}
+ 
+/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .navigation{
+            margin-top:15%;
+        }
+	
+        #forgot{
+            margin-top:-2%;
+    
+            font-size: 10px;
+        }
+        .search_box{
+            margin-top:0.5%;
+            position:absolute;
+        }
+        #toSearch{
+            width:160%;
+        }
+        #edit_profile{
+            position: relative;
+            margin-left:43.5%;
+        }
+	}
+ 
+
+/* Iphone retina*/
+@media only screen and (max-width : 320px){
+            html {
+                position: relative;
+                min-height: 100%;
+            }
+            body {
+                /* Margin bottom by footer height */
+                margin-bottom: 60px;
+            }
+            .footer{
+                margin-left:-7%;    
+            }
+
+	}
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
