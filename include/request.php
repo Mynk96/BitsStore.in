@@ -77,11 +77,7 @@ class Request{
 		// - single-quotes around all values
 		// - escape all values to prevent SQL injection
 		$attributes = $this->attributes();
-	  $sql = "INSERT INTO ".self::$table_name." (";
-		$sql .= join(", ", array_keys($attributes));
-	  $sql .= ") VALUES ('";
-		$sql .= join("', '", array_values($attributes));
-		$sql .= "')";
+		$sql = "INSERT INTO requested_products VALUES(".$this->id.",".$this->requested_user.",".$this->email.",".$this->requested_product.",".$this->created.")";
 	  if($database->query($sql)) {
 	    $this->id = $database->insert_id();
 	    return true;

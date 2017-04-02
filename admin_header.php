@@ -48,7 +48,9 @@ body {
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="custom.css" type="text/css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-    
+		<link href="hover.css" rel="stylesheet" media="all">
+		<link href="css/lightbox.css"rel="stylesheet">
+		<script src="js/lightbox-plus-jquery.js"></script>
 
     </head>
     

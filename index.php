@@ -45,7 +45,7 @@
         $email = "";
         $password = "";
     }*/
-     
+     $requests = Request::last_7_days();
 ?>
 <?php require_once("header.php");?>
 
@@ -90,22 +90,11 @@
                         <div class="panel panel-primary " style="overflow-y:scroll; max-height:30%;">
                             <div class="panel-heading">Requested Products:</div>
                             <div class="panel-body">
-                                <p><a href="#">Mayank Harsani</a> requested Mech computer science books + anything stupid.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
-                                <p><a href="#">Mayank Harsani</a> requested Guitar.</p>
+                        <?php foreach($requests as $request):?>        
+                                <p><a href="view_profile.php?email=<?php echo $request->email;?>"><?php echo $request->requested_user;?></a> requested <?php echo $request->requested_product;?></p>
+                        <?php endforeach;?>    
                             </div>
                         </div>
-                        <form role="form" method="post">
-                        <div class="form-group">    
-                            <label for = "requested_product" class="control-label">Request Product:</label>
-                            <input type="text" class="form-control" id="requested_product" maxlength="255"></div>
-                            <div class="form-group"><input type="button" value="Request" name="request" class="btn btn-default">
-                            </div>
-                        </form>
                         </div>
                 
                         

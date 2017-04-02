@@ -10,6 +10,7 @@
             redirect_to($_SERVER['HTTP_REFERER']);
         }else{
             $message = "Request couldn't be made";
+			echo($message);
         }
     }else{
         $requested_user = "";
@@ -26,9 +27,16 @@
         align-items: center;
         
     }.image-sizing{
-    width:270px;
-    height:235px;
-}
+    width:180px;
+    height:180px;
+	}
+	.product_data p{
+        font-family:"Arial",sans-serif;
+        color:#626567;
+        font-size:18px;
+        text-align:center;
+        margin-left:-20%;
+    }
 
 
 
@@ -85,9 +93,9 @@
                         
                         
                     <?php foreach($photos as $photo):?>
-                    <div class=" col-sm-4 col-md-3 col-lg-3" style="display:inline-table">
-                        <a href="product.php?name=<?php echo $photo->product_name;?>&amp;&amp;id=<?php echo $photo->id;?>"><img src="images/<?php echo $photo->filename;?>" class="thumbnail img-responsive image-sizing">
-                        <div style="margin-top:-8%;text-align:center; margin-bottom:3%;">
+                    <div class="col-md-3 col-lg-3 hvr-float" style="display:inline-block">        
+                        <a href="product.php?name=<?php echo $photo->product_name;?>&amp;&amp;id=<?php echo $photo->id;?>"><img src="images/thumb/<?php echo $photo->filename;?>" class="thumbnail img-responsive image-sizing">
+                        <div style="margin-top:-8%; margin-bottom:10%;" class="product_data">
                             <p class="text text-capitalize"><?php echo $photo->product_name;?></p>
                             <p style="color:EC7063; margin-top:-5%;">Rs.<?php echo $photo->product_price;?></p>
                             </div></a>
