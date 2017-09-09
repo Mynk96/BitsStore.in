@@ -1,7 +1,7 @@
 <?php  
     require_once("include/initialize.php");
     require("search.php");
-    $msg = "";
+    $msg = "hello";
     
     
     
